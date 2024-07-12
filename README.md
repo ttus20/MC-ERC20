@@ -1,6 +1,7 @@
 # ERC20 TOKEN PROJECT
 
 Project: Create and Mint Token
+The ERC20 or Ethereum Request for Comment number 20 is for creating interoperable tokens on the Ethereum Virtual Machine. The project requires executing in RemixEthereum with the use of the function of burning and transferring tokens.
 
 ## Description
 
@@ -12,18 +13,29 @@ From your chosen tool, the contract owner should be able to mint tokens to a pro
 ### Installing
 
 * Go to Remix Ethereum
-* From the module, get the given contract file and paste the code in the Remix
-* Run the given codes on the Remix IDE
+* Open a new solidity file to begin a clear file
+* Make sure to have this at the beginning 
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+```
+
+* Since this ERC20 uses OpenZeppelin this will require a specific code import
+
+```
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+```
 
 ### Executing program
 
+* Run the given codes on the Remix IDE
 * Compile the codes (.sol) on Remix Ethereum IDE
+* After compiling in solidity compiler, go to deploy and run transaction
 * Deploy the contract, the functions are already included when deploying
 * Copy the link address and apply to the corresponding field
 
-## Help
-
-Any advise for common problems or issues.
 
 ## Authors
 
